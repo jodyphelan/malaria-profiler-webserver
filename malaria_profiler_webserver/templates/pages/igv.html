@@ -1,0 +1,10 @@
+{% import 'utils.html' as utils %}
+{% extends 'base.html' %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    {{utils.igv("/static/results/cvdb.fasta","NC_045512.2:6,158-6,197","/static/results/ARI-13.bam","test")}}
+{% endblock %}
